@@ -1,0 +1,25 @@
+{
+  "name": "movielistr",
+  "version": "1.0.0",
+  "description": "A program to keep a diary of movies you watched.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack --config ./webpack/dev.webpack.config.js"
+  },
+  "keywords": [
+    "movielistr",
+    "movies",
+    "listr",
+    "crud"
+  ],
+  "author": "Ivar van Hartingsveldt",
+  "license": "ISC",
+  "devDependencies": {
+    "ts-loader": "^2.0.3",
+    "typescript": "^2.3.2",
+    "webpack": "^2.5.1"
+  },
+  "dependencies": {
+    "awilix": "^2.2.6"
+  }
+}
