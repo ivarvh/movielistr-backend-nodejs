@@ -15,11 +15,19 @@
   "author": "Ivar van Hartingsveldt",
   "license": "ISC",
   "devDependencies": {
+    "source-map-loader": "^0.2.1",
     "ts-loader": "^2.0.3",
     "typescript": "^2.3.2",
     "webpack": "^2.5.1"
   },
   "dependencies": {
-    "awilix": "^2.2.6"
+    "@types/koa": "^2.0.39",
+    "@types/koa-bodyparser": "^3.0.23",
+    "@types/koa-router": "^7.0.22",
+    "awilix": "^2.2.6",
+    "koa": "^2.2.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-router": "^7.1.1",
+    "source-map-support": "^0.4.15"
   }
 }

@@ -10,12 +10,15 @@ export default class MovieService {
         this.directorService = directorService;
     }
 
-    public addMovie(title: string, duration: number, releaseYear: number, directorId: number) {
+    public addMovie(title: string, duration: number, releaseYear: number, directorId: number): Movie {
         const director = this.directorService.findById(directorId);
-
-        this.movies.push(Movie.newMovie(
+        const newMovie = Movie.newMovie(
             this.movies.length + 1, title, releaseYear, duration, director
-        ));
+        );
+
+        this.movies.push(newMovie);
+
+        return newMovie;
     }
 
     public findById(id: number): Movie {
@@ -26,7 +29,7 @@ export default class MovieService {
         return movie;
     }
 
-    public findAll() {
+    public findAll(): Array<Movie> {
         return this.movies;
     }
 
